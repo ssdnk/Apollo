@@ -363,6 +363,8 @@
     "upnp_desc": "Automatická konfigurace přesměrování portů pro streamování přes Internet",
     "vaapi_strict_rc_buffer": "Přísné vynucení limitů datového toku snímků pro H.264/HEVC na grafických procesorech AMD",
     "vaapi_strict_rc_buffer_desc": "Povolením této možnosti lze zabránit vypadávání snímků po síti při změnách scény, ale kvalita videa může být při pohybu snížena.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Virtuální zvuk",
     "virtual_sink_desc": "Ručně zadejte virtuální zvukové zařízení, které chcete použít. Pokud není nastaveno, je zařízení vybráno automaticky. Důrazně doporučujeme ponechat toto pole prázdné, chcete-li použít automatický výběr zařízení!",
     "virtual_sink_placeholder": "Streamovací reproduktory služby Steam",

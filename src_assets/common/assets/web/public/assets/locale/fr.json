@@ -355,6 +355,8 @@
     "upnp_desc": "Configurer automatiquement la redirection de port pour le streaming sur Internet",
     "vaapi_strict_rc_buffer": "Appliquer strictement les limites de débit d'images pour H.264/HEVC sur les GPU AMD",
     "vaapi_strict_rc_buffer_desc": "L'activation de cette option peut éviter de laisser tomber des images sur le réseau pendant les changements de scène, mais la qualité de la vidéo peut être réduite pendant le mouvement.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Sortie virtuelle",
     "virtual_sink_desc": "Spécifiez manuellement un périphérique audio virtuel à utiliser. Si non défini, le périphérique est choisi automatiquement. Nous vous recommandons fortement de laisser ce champ vide pour utiliser la sélection automatique de l'appareil !",
     "virtual_sink_placeholder": "Steam Streaming Speakers",

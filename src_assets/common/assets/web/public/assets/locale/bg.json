@@ -352,6 +352,8 @@
     "upnp_desc": "Автоматично настройване на пренасочването на портове за излъчване през Интернет",
     "vaapi_strict_rc_buffer": "Налагане на строги ограничения за побитовата скорост на кадрите за H.264/HEVC при видео карти на AMD",
     "vaapi_strict_rc_buffer_desc": "Включването на това може да предотврати пропускането на кадри по мрежата по време на промени в сцената, но качеството на видеото по време на движение може да бъде намалено.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Виртуален изход",
     "virtual_sink_desc": "Ръчно задаване на виртуално звуково устройство, което да се ползва. Ако не е зададено, устройството се избира автоматично. Силно препоръчително е да оставите това поле празно, за да използвате автоматичния избор на устройство!",
     "virtual_sink_placeholder": "Виртуални високоговорители на Steam",

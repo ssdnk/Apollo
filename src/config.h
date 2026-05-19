@@ -81,6 +81,7 @@ namespace config {
 
     struct {
       bool strict_rc_buffer;
+      bool force_cqp;
     } vaapi;
 
     std::string capture;

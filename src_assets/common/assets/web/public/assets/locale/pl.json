@@ -352,6 +352,8 @@
     "upnp_desc": "Automatycznie skonfiguruj przekierowanie portów do przesyłania strumieniowego przez Internet",
     "vaapi_strict_rc_buffer": "Ścisłe egzekwowanie limitów przepływności klatek dla H.264/HEVC na układach GPU AMD",
     "vaapi_strict_rc_buffer_desc": "Włączenie tej opcji pozwala uniknąć porzucania klatek przez sieć podczas zmiany sceny, ale jakość wideo może zostać obniżona podczas ruchu.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Wirtualny odbiornik",
     "virtual_sink_desc": "Ręczne określenie używanego wirtualnego urządzenia audio. Jeśli nie jest ustawione, urządzenie zostanie wybrane automatycznie. Zdecydowanie zalecamy pozostawienie tego pola pustego, aby korzystać z automatycznego wyboru urządzenia!",
     "virtual_sink_placeholder": "Głośniki do strumieniowania Steam",

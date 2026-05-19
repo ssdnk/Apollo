@@ -363,6 +363,8 @@
     "upnp_desc": "自動設定透過網際網路串流的連接埠轉發",
     "vaapi_strict_rc_buffer": "在 AMD GPU 上嚴格執行 H.264/HEVC 的幀位元率限制",
     "vaapi_strict_rc_buffer_desc": "啟用此選項可以避免場景變換時在網路上發生畫面掉幀，但可能會降低畫面移動時的影像品質。",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "虛擬音訊輸出",
     "virtual_sink_desc": "手動指定要使用的虛擬音訊裝置。如果未設定，則會自動選擇裝置。我們強烈建議將此欄位留空，以使用自動裝置選擇！",
     "virtual_sink_placeholder": "Steam 串流喇叭",

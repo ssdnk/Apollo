@@ -220,32 +220,6 @@ namespace va {
       return VAProfileNone;
     }
 
-    /**
-     * @brief Detects whether the DRM device is driven by the xe kernel driver.
-     * @details xe does not load HuC firmware on DG2/XeHPG, so CBR/VBR rate
-     *          control will fail even though vaGetConfigAttributes() claims
-     *          support. We detect this at runtime via the kernel driver symlink
-     *          in sysfs so we can fall back to CQP unconditionally.
-     * @return true if the kernel driver for file.el is "xe".
-     */
-    bool is_xe_driver() const {
-      struct stat st;
-      if (fstat(file.el, &st) != 0) {
-        return false;
-      }
-      auto sysfs_driver = std::format("/sys/dev/char/{}:{}/device/driver",
-                                      major(st.st_rdev), minor(st.st_rdev));
-      char link_target[PATH_MAX];
-      ssize_t len = readlink(sysfs_driver.c_str(), link_target, sizeof(link_target) - 1);
-      if (len < 0) {
-        return false;
-      }
-      link_target[len] = '\0';
-      auto *driver_name = strrchr(link_target, '/');
-      driver_name = driver_name ? driver_name + 1 : link_target;
-      return strcmp(driver_name, "xe") == 0;
-    }
-
     void init_codec_options(AVCodecContext *ctx, AVDictionary **options) override {
       auto va_profile = get_va_profile(ctx);
       if (va_profile == VAProfileNone || !is_va_profile_supported(va_profile)) {
@@ -275,11 +249,8 @@ namespace va {
         rc_attr.value = 0;
       }
 
-      // The xe kernel driver does not load HuC firmware on DG2/XeHPG, so
-      // CBR/VBR rate control is unavailable even though vaGetConfigAttributes()
-      // incorrectly reports support.  Force CQP to avoid encoding failures.
-      if (is_xe_driver()) {
-        BOOST_LOG(info) << "xe driver detected: HuC unavailable, forcing CQP rate control"sv;
+      if (config::video.vaapi.force_cqp) {
+        BOOST_LOG(info) << "vaapi_force_cqp enabled: forcing CQP rate control"sv;
         rc_attr.value &= ~static_cast<unsigned int>(VA_RC_CBR | VA_RC_VBR);
       }
 

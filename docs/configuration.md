@@ -2871,6 +2871,30 @@ editing the `conf` file in a text editor. Use the examples as reference.
     </tr>
 </table>
 
+### vaapi_force_cqp
+
+<table>
+    <tr>
+        <td>Description</td>
+        <td colspan="2">
+            Force CQP (constant quantizer) rate control for the VAAPI encoder, disabling CBR and VBR.
+            @note{Required for Intel Arc A-series (DG2/Alchemist) with the xe kernel driver, where HuC firmware is unavailable and CBR/VBR encoding fails at runtime.}
+        </td>
+    </tr>
+    <tr>
+        <td>Default</td>
+        <td colspan="2">@code{}
+            disabled
+            @endcode</td>
+    </tr>
+    <tr>
+        <td>Example</td>
+        <td colspan="2">@code{}
+            vaapi_force_cqp = enabled
+            @endcode</td>
+    </tr>
+</table>
+
 ## Software Encoder
 
 ### sw_preset

@@ -355,6 +355,8 @@
     "upnp_desc": "インターネット経由でストリーミングするポート転送を自動的に設定します",
     "vaapi_strict_rc_buffer": "AMD GPUでH.264/HEVCのフレームビットレート制限を厳密に強制する",
     "vaapi_strict_rc_buffer_desc": "このオプションを有効にすると、シーンの変更中にネットワーク上でフレームがドロップされるのを避けることができますが、移動中にビデオの品質が低下する可能性があります。",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Virtual Sink",
     "virtual_sink_desc": "使用する仮想オーディオデバイスを手動で指定します。未設定の場合は、デバイスが自動的に選択されます。 自動デバイス選択を使用するには、このフィールドを空白のままにすることを強くお勧めします!",
     "virtual_sink_placeholder": "Steamストリーミングスピーカー",

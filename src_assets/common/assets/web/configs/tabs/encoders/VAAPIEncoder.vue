@@ -19,6 +19,13 @@ const config = ref(props.config)
               v-model="config.vaapi_strict_rc_buffer"
               default="false"
     ></Checkbox>
+    <!-- Force CQP -->
+    <Checkbox class="mb-3"
+              id="vaapi_force_cqp"
+              locale-prefix="config"
+              v-model="config.vaapi_force_cqp"
+              default="false"
+    ></Checkbox>
   </div>
 </template>
 

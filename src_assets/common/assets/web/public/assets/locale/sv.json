@@ -411,6 +411,8 @@
     "upnp_desc": "Konfigurera portvidarebefordran automatiskt för streaming över Internet",
     "vaapi_strict_rc_buffer": "Strikt tillämpa gränser för bildrutans bithastighet för H.264/HEVC på AMD GPU",
     "vaapi_strict_rc_buffer_desc": "Aktivering av detta alternativ kan undvika tappade bildrutor över nätverket vid scenförändringar, men videokvaliteten kan minska vid rörelse.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Virtuell ljudmottagare",
     "virtual_sink_desc": "Ljudenheten som ska användas när ljudutmatning inte tillåts på värden av klienten.\nOm ej inställd väljs enheten automatiskt.\nVi rekommenderar starkt att lämna detta fält tomt för att använda automatiskt enhetsval!",
     "virtual_sink_placeholder": "Steam Streaming Högtalare",

@@ -363,6 +363,8 @@
     "upnp_desc": "Tự động cấu hình chuyển tiếp cổng để phát trực tuyến qua Internet.",
     "vaapi_strict_rc_buffer": "Thực thi nghiêm ngặt giới hạn tốc độ khung hình cho H.264/HEVC trên GPU AMD.",
     "vaapi_strict_rc_buffer_desc": "Bật tùy chọn này có thể tránh tình trạng mất khung hình trên mạng trong quá trình chuyển cảnh, nhưng chất lượng video có thể bị giảm trong quá trình chuyển động.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Bồn rửa ảo",
     "virtual_sink_desc": "Chỉ định thủ công thiết bị âm thanh ảo để sử dụng. Nếu không được thiết lập, thiết bị sẽ được chọn tự động. Chúng tôi khuyến nghị mạnh mẽ để để trống trường này để sử dụng tính năng chọn thiết bị tự động!",
     "virtual_sink_placeholder": "Loa phát trực tuyến Steam",

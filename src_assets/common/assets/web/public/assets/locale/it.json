@@ -352,6 +352,8 @@
     "upnp_desc": "Configura automaticamente l'inoltro delle porte per lo streaming su Internet",
     "vaapi_strict_rc_buffer": "Applicare rigorosamente i limiti di bitrate frame per H.264/HEVC su GPU AMD",
     "vaapi_strict_rc_buffer_desc": "Abilitare questa opzione può evitare di cadere quadri sulla rete durante i cambiamenti di scena, ma la qualità video può essere ridotta durante il movimento.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Uscita Audio Virtuale",
     "virtual_sink_desc": "Specifica manualmente un dispositivo audio virtuale da usare. Se disattivato, il dispositivo viene scelto automaticamente. Si consiglia vivamente di lasciare vuoto questo campo per utilizzare la selezione automatica del dispositivo!",
     "virtual_sink_placeholder": "Altoparlanti Streaming Di Steam",

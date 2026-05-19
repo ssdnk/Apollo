@@ -363,6 +363,8 @@
     "upnp_desc": "Porttovábbítás automatikus konfigurálása az interneten keresztüli streaminghez",
     "vaapi_strict_rc_buffer": "A H.264/HEVC képkocka-bitráta korlátok szigorú betartása AMD GPU-kon",
     "vaapi_strict_rc_buffer_desc": "Ha engedélyezi ezt a beállítást, elkerülheti a hálózaton keresztül történő képkocka kiesést a jelenetváltások során, de a videó minősége csökkenhet mozgás közben.",
+    "vaapi_force_cqp": "Force CQP rate control",
+    "vaapi_force_cqp_desc": "Required for Intel Arc A-series (DG2) with xe driver where HuC firmware is unavailable. Disables CBR and VBR, which fail silently on affected hardware.",
     "virtual_sink": "Virtuális mosogató",
     "virtual_sink_desc": "Kézzel adja meg a használni kívánt virtuális audioeszközt. Ha nincs megadva, az eszköz automatikusan kiválasztásra kerül. Az automatikus eszközkiválasztás használatához erősen ajánlott üresen hagyni ezt a mezőt!",
     "virtual_sink_placeholder": "Steam streaming hangszórók",
